@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Configuration simplifiée d'Axios avec proxy Vite
 const axiosInstance = axios.create({
-  baseURL: "/api", // Le préfixe /api sera conservé et rediriger par Vite vers le serveur
+  baseURL: "http://localhost:8000/api", // URL complète du serveur backend
   headers: {
     "Content-Type": "application/json",
   },
